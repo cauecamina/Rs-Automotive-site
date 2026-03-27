@@ -174,8 +174,8 @@ export default function App() {
         </section>
 
         {/* BENTO GRID (DIFERENCIAIS) */}
-        <section id="diferenciais" className="py-32 px-6 max-w-7xl mx-auto">
-          <div className="mb-20 text-center">
+        <section id="diferenciais" className="py-16 md:py-32 px-6 max-w-7xl mx-auto">
+          <div className="mb-12 md:mb-20 text-center">
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Excelência em cada detalhe</span>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">POR QUE ESCOLHER A <br /> <span className="text-gradient">RS AUTOMOTIVE?</span></h2>
             <p className="text-muted text-sm mt-6 max-w-2xl mx-auto">Referência em estética automotiva e martelinho de ouro em Guarulhos, unindo tecnologia e cuidado artesanal.</p>
@@ -239,8 +239,8 @@ export default function App() {
         </section>
 
         {/* SERVICES / ABOUT */}
-        <section id="servicos" className="py-32 bg-card overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <section id="servicos" className="py-16 md:py-32 bg-card overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="reveal text-center lg:text-left">
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Nossa Expertise</span>
               <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold tracking-tighter mb-8 leading-[1.1] text-white">TRANSFORMANDO <br /> <span className="text-gradient">METAL EM ARTE.</span></h2>
@@ -287,9 +287,9 @@ export default function App() {
         </section>
 
         {/* TESTIMONIALS */}
-        <section id="depoimentos" className="py-32 px-6">
+        <section id="depoimentos" className="py-16 md:py-32 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 text-center md:text-left">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 md:mb-20 gap-8 text-center md:text-left">
               <div className="reveal">
                 <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Voz dos Clientes</span>
                 <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">O QUE DIZEM <br /> <span className="text-gradient">SOBRE NÓS.</span></h2>
@@ -323,9 +323,9 @@ export default function App() {
         </section>
 
         {/* LOCALIZAÇÃO */}
-        <section id="localizacao" className="py-32 px-6">
+        <section id="localizacao" className="py-16 md:py-32 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 reveal">
+            <div className="text-center mb-12 md:mb-16 reveal">
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Como Chegar</span>
               <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">NOSSA <span className="text-gradient">LOCALIZAÇÃO.</span></h2>
               <p className="text-muted text-sm mt-6 max-w-2xl mx-auto">Venha tomar um café conosco e conhecer nossa estrutura premium de perto.</p>
@@ -348,8 +348,8 @@ export default function App() {
         </section>
 
         {/* CTA FINAL */}
-        <section className="py-32 px-6 checkered-bg">
-          <div className="max-w-5xl mx-auto glass p-12 md:p-24 rounded-[48px] text-center reveal border-accent/20">
+        <section className="py-16 md:py-32 px-6 checkered-bg">
+          <div className="max-w-5xl mx-auto glass p-8 md:p-24 rounded-[48px] text-center reveal border-accent/20">
             <h2 className="font-display text-4xl md:text-7xl font-bold tracking-tight mb-8 italic text-white pr-4">PRONTO PARA <br /> <span className="text-gradient pr-2 inline-block">O PRÓXIMO NÍVEL?</span></h2>
             <p className="text-muted text-lg mb-12 max-w-xl mx-auto">
               Agende agora sua avaliação técnica e descubra como podemos proteger e valorizar seu veículo com a melhor estética de Guarulhos.
@@ -362,8 +362,8 @@ export default function App() {
       </main>
 
       {/* FOOTER */}
-      <footer id="contato" className="py-20 px-6 border-t border-white/5">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <footer id="contato" className="py-12 md:py-20 px-6 border-t border-white/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-12">
           <div className="md:col-span-2">
             <span className="font-display font-bold text-2xl tracking-tighter mb-6 block text-white">RS AUTOMOTIVE</span>
             <p className="text-muted text-sm max-w-sm mb-8">
@@ -394,8 +394,8 @@ export default function App() {
             </p>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted text-[10px] uppercase tracking-widest">© 2026 RS AUTOMOTIVE. TODOS OS DIREITOS RESERVADOS.</p>
+        <div className="max-w-7xl mx-auto mt-12 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted text-[10px] uppercase tracking-widest text-center md:text-left">© 2026 RS AUTOMOTIVE. TODOS OS DIREITOS RESERVADOS.</p>
           <p className="text-muted text-[10px] uppercase tracking-widest">DESIGNED FOR EXCELLENCE</p>
         </div>
       </footer>
