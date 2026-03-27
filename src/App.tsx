@@ -322,6 +322,31 @@ export default function App() {
           </div>
         </section>
 
+        {/* LOCALIZAÇÃO */}
+        <section id="localizacao" className="py-32 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16 reveal">
+              <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Como Chegar</span>
+              <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">NOSSA <span className="text-gradient">LOCALIZAÇÃO.</span></h2>
+              <p className="text-muted text-sm mt-6 max-w-2xl mx-auto">Venha tomar um café conosco e conhecer nossa estrutura premium de perto.</p>
+            </div>
+            
+            <div className="reveal glass rounded-[32px] overflow-hidden border-white/5 p-2 md:p-4">
+              <iframe 
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pt-BR&amp;q=RS%20Automotive,%20Av.%20Avelino%20Alves%20Machado,%20139,%20Guarulhos,%20SP+(RS%20Automotive)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0, borderRadius: '24px' }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps RS Automotive"
+                className="opacity-90 hover:opacity-100 transition-all duration-700"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
         {/* CTA FINAL */}
         <section className="py-32 px-6 checkered-bg">
           <div className="max-w-5xl mx-auto glass p-12 md:p-24 rounded-[48px] text-center reveal border-accent/20">
