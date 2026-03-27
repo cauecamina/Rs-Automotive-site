@@ -10,12 +10,12 @@ export default function App() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Hero Entrance
-      const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.5 } });
+      const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 0.8 } });
 
-      tl.to(".word", { y: 0, opacity: 1, stagger: 0.1, duration: 1.2 })
-        .to("#hero-sub", { opacity: 1, y: 0 }, "-=0.8")
-        .to("#hero-cta", { opacity: 1, scale: 1 }, "-=1.0")
-        .from("#hero-bg", { scale: 1.2, duration: 3 }, 0);
+      tl.to(".word", { y: 0, opacity: 1, stagger: 0.05, duration: 0.6 })
+        .to("#hero-sub", { opacity: 1, y: 0 }, "-=0.4")
+        .to("#hero-cta", { opacity: 1, scale: 1 }, "-=0.5")
+        .from("#hero-bg", { scale: 1.1, duration: 1.5 }, 0);
 
       // Parallax effect for hero background
       gsap.to("#hero-bg", {
@@ -40,7 +40,7 @@ export default function App() {
           },
           opacity: 0,
           y: 30,
-          duration: 1,
+          duration: 0.5,
           ease: "power3.out"
         });
       });
@@ -98,9 +98,10 @@ export default function App() {
 
       <main>
         {/* HERO SECTION */}
-        <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <section className="relative w-full h-[100svh] min-h-[600px] max-h-[900px] flex items-center justify-center pt-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
+              fetchPriority="high"
               src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop"
               alt="Luxury Car Detailing"
               className="w-full h-full object-cover opacity-50 scale-110"
@@ -185,6 +186,7 @@ export default function App() {
             {/* Item 1: Polimento (Large) */}
             <div className="min-h-[300px] md:col-span-2 md:row-span-2 bento-item group reveal">
               <img src="https://lh3.googleusercontent.com/d/1m8F5BWYRIhTp0Uj4bA08noPhUV6pMT02"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700"
                 alt="Polimento Técnico" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent"></div>
@@ -198,11 +200,12 @@ export default function App() {
             {/* Item 2: Vitrificação */}
             <div className="min-h-[250px] md:col-span-2 bento-item group reveal">
               <img src="https://i.pinimg.com/736x/90/55/89/905589854e8b82a4adb6d2bb935b8ae8.jpg"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-                alt="Vitrificação 9H" />
+                alt="Vitrificação" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="font-display text-2xl font-bold mb-2 text-white">Vitrificação 9H</h3>
+                <h3 className="font-display text-2xl font-bold mb-2 text-white">Vitrificação</h3>
                 <p className="text-muted text-xs max-w-xs">Proteção cerâmica de longa duração contra raios UV, poluição e agentes químicos.</p>
               </div>
             </div>
@@ -210,6 +213,7 @@ export default function App() {
             {/* Item 3: Higienização */}
             <div className="min-h-[250px] bento-item group reveal">
               <img src="https://lh3.googleusercontent.com/d/1FGGwQMLhPFH3uaz8u3d5DYubUdtxjkrJ"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
                 alt="Higienização" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent"></div>
@@ -227,6 +231,7 @@ export default function App() {
             {/* Item 4: Lavagem Detail */}
             <div className="min-h-[250px] bento-item group reveal">
               <img src="https://lh3.googleusercontent.com/d/1mn_rfBmATU5E1FonxnR2Krt4vamdU7DY"
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
                 alt="Lavagem Detail" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent"></div>
@@ -273,6 +278,7 @@ export default function App() {
             <div className="relative reveal">
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden">
                 <img src="https://lh3.googleusercontent.com/d/11DhkUo3VyLTWDSrjrubZTUYJaWyuOJPn"
+                  loading="lazy"
                   alt="Detailing Process"
                   className="w-full h-full object-cover" />
               </div>
@@ -330,15 +336,15 @@ export default function App() {
               <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">NOSSA <span className="text-gradient">LOCALIZAÇÃO.</span></h2>
               <p className="text-muted text-sm mt-6 max-w-2xl mx-auto">Venha tomar um café conosco e conhecer nossa estrutura premium de perto.</p>
             </div>
-            
+
             <div className="reveal glass rounded-[32px] overflow-hidden border-white/5 p-2 md:p-4">
-              <iframe 
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pt-BR&amp;q=RS%20Automotive,%20Av.%20Avelino%20Alves%20Machado,%20139,%20Guarulhos,%20SP+(RS%20Automotive)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0, borderRadius: '24px' }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pt-BR&amp;q=RS%20Automotive,%20Av.%20Avelino%20Alves%20Machado,%20139,%20Guarulhos,%20SP+(RS%20Automotive)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="450"
+                style={{ border: 0, borderRadius: '24px' }}
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Maps RS Automotive"
                 className="opacity-90 hover:opacity-100 transition-all duration-700"
