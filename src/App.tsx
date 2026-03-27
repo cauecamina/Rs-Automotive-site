@@ -289,13 +289,13 @@ export default function App() {
         {/* TESTIMONIALS */}
         <section id="depoimentos" className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 text-center md:text-left">
               <div className="reveal">
                 <span className="text-xs font-bold uppercase tracking-[0.4em] text-muted mb-4 block">Voz dos Clientes</span>
                 <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-white">O QUE DIZEM <br /> <span className="text-gradient">SOBRE NÓS.</span></h2>
               </div>
               <div className="reveal">
-                <a href="https://www.google.com/search?q=RS+Automotive+Guarulhos" target="_blank" rel="noopener noreferrer" className="text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-2 hover:border-white transition-all text-white">
+                <a href="https://www.google.com/search?q=RS+Automotive+Guarulhos#lrd=0x94cef54bc7af61b7:0x57b74197086247d5,1,,,," target="_blank" class="text-sm font-bold uppercase tracking-widest border-b border-white/20 pb-2 hover:border-white transition-all inline-block">
                   Ver todas as avaliações
                 </a>
               </div>
